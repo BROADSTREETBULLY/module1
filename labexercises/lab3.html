@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <title>Module 1 Exercise 3</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        min-height: 100vh;
+        align-items: stretch;
+      }
+      .column {
+        background: rgb(32, 218, 79);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+      }
+    </style>
+  </head>
+
+
+  <body>
+    <div class="container">
+      <div class="column" id="column1">
+        <img src="images/ocean.jpeg" alt="Image1">
+        <h1 id="heading1">Hello</h1>
+        <button id="button1">Change Me</button>
+       
+      </div>
+      <div class="column" id="column2">
+        <img src="images/desert.jpeg" alt="Image2">
+        <h1 id="heading2">World</h1>
+        <button id="button2">Change Me</button>
+        
+      </div>
+    </div>
+
+    <Script>
+
+     
+
+
+      function helloOcean() {
+         document.getElementById("heading1").innerText ='Hello Ocean';
+         document.getElementById("column1").style.backgroundColor='lightblue';
+      }
+
+      const button1 = document.getElementById('button1');
+      button1.addEventListener('click', helloOcean);
+
+      function helloDesert() {
+         document.getElementById("heading2").innerText ='Hello Desert';
+         document.getElementById("column2").style.backgroundColor='goldenrod';
+      }
+
+      const button2 = document.getElementById('button2');
+      button2.addEventListener('click', helloDesert);
+
+    </Script>
+
+
+  </body>
+
+
+</html>
